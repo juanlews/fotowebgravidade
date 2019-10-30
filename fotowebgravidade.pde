@@ -17,14 +17,22 @@ Box2DProcessing box2d;
 // Movers, jsut like before!
 Mover[] movers = new Mover[25];
 
+//Imagens serão carregadas
+PImage img[] = new PImage[10];
+
 // Attractor, just like before!
 Attractor a;
 
 void setup() {
   size(800,600);
   smooth();
+  
+  img[0] = loadImage("faustão_triste-feliz.jpg");
+  //img[1] = loadImage("test2.png");
+  
   box2d = new Box2DProcessing(this);
   box2d.createWorld();
+  
   // No global gravity force
   box2d.setGravity(0,0);
 
