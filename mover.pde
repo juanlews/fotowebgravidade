@@ -57,8 +57,7 @@ class Mover {
     stroke(0);
     strokeWeight(1);
     ellipse(0,0,r*2,r*2);
-    // Let's add a line so we can see the rotation
-    line(0,0,r,0);
+    image(img[cont],-r,-r,r*2,r*2);
     popMatrix();
   }
 }
